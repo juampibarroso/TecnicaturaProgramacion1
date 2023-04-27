@@ -6,11 +6,11 @@
 En este repositorio se encuentran todos los trabajos semanales realizados por los integrantes del grupo Gigabyte.
 | **Semana** | **Scrum Master** |
 | ---- | ---- |
-| 🟢 semana 1 | ** |
-| 🟢 semana 2 | ** |
-| 🟢 semana 3 | ** |
-| ⚪ semana 4 | ** |
-| ⚪ semana 5 | ** |
-| ⚪ semana 6 | ** |
-| ⚪ semana 7 | ** |
-| ⚪ semana 8 | ** |
+| Semana 1 | ** |
+| Semana 2 | ** |
+| Semana 3 | ** |
+| Semana 4 | ** |
+| Semana 5 | ** |
+| Semana 6 | ** |
+| Semana 7 | ** |
+| Semana 8 | ** |
