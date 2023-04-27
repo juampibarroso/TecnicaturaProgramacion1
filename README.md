@@ -4,3 +4,13 @@
 
 # Gigabyte - TercerSemestre
 En este repositorio se encuentran todos los trabajos semanales realizados por los integrantes del grupo Gigabyte.
+| **Semana** | **Scrum Master** |
+| ---- | ---- |
+| 🟢 semana 1 | ** |
+| 🟢 semana 2 | ** |
+| 🟢 semana 3 | ** |
+| ⚪ semana 4 | ** |
+| ⚪ semana 5 | ** |
+| ⚪ semana 6 | ** |
+| ⚪ semana 7 | ** |
+| ⚪ semana 8 | ** |
