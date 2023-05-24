@@ -57,3 +57,95 @@ console.log(personaArray)
 console.log('Distintas formas de imprimir un objeto: Forma 4')
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+console.log('Comenzamos a utilizar el metodo get');
+console.log(persona.nombreEdad);
+
+console.log('Comenzamos con el metodo get y set para idiomas')
+persona.lang = 'en';//Aqui cambiamos el idioma
+console.log(persona.lang);
+
+function Persona3(nombre = 'Luis',apellido,email){//Constructor
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    //Creamos un metodo dentro del metodo constructor
+    this.nombreCompleto= function(){
+        return this.nombre+ ' '+this.apellido
+    }
+}
+
+let padre = new Persona3('Leo','Lopez','lopezl@mail.com');
+padre.nombre = 'santiago';//Modificamos el nombre
+padre.telefono = '2604232323'//Una propiedad exclusiva del objeto padre
+console.log(padre);
+console.log(padre.nombreCompleto());//utilizamos la funcion
+let madre = new Persona3('Laura','Contrera','contreraL@gmail.com');
+console.log(madre);
+console.log(madre.telefono); //la propiedad no esta definida
+console.log(madre.nombreCompleto());
+
+//Diferentes formas de crear objetos
+//caso objeto 1
+let miObjeto1 = new Object();//Esta es una opcion formal
+//caso objeto 2
+let miObjeto2 = {}; //esta opcion es breve y recomendada
+
+//caso String 1
+let miCadena1= new String('Hola'); //Sintaxis formal
+//caso String 2 
+let miCadena2 = 'Hola'; //Esta es la sintaxis simplificada y recomendada
+
+//caso con numeros 1
+let miNumero1 = new Number(1);//Caso formal no recomendable
+//caso numero2
+let miNumero2 = 1; //sintaxis recomendada
+
+//Caso con booleanos 1
+let miBoolean1 = new Boolean(false);//formal
+//caso n2 booleano
+let miBoolean2 = false; //sintaxis recomendada
+
+//caso n1 arreglos
+let miArreglo1 = new Array(); //formal
+//caso n2 arreglos
+let miArreglo2 = []; // sintaxis recomendada
+
+//Funciones caso 1
+let miFuncion1 = new function(){};//todo despues de new es considerado objeto
+//funciones caso 2
+let miFuncion2 = function(){}; // notacion simplificada y recomendada
+
+
+
+//Uso de prototype
+Persona3.prototype.telefono = '2604023213';
+console.log(padre);
+console.log(madre.telefono)
+madre.telefono = '999999923';
+console.log(madre.telefono);
+
+
+//uso de call
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo,telefono){
+        return titulo+': '+ this.nombre+ ' '+this.apellido+'. Cel: '+telefono;
+        //return this.nombre+ ' '+this.apellido 
+    }
+}
+
+let persona5 = {
+    nombre:'Carlos',
+    apellido:'Lara'
+}
+
+console.log(persona4.nombreCompleto2('Lic.','12453215323'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ingeniero','21391329123'));
+
+
+
+//metodo Apply
+let arreglo = ['Ing.','1321453676']
+console.log(persona4.nombreCompleto2.apply(persona5,arreglo));
