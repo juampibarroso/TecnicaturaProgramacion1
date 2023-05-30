@@ -3,3 +3,36 @@
 08:30:47 PM:WARNING [logger_base.py:15] Mensaje a nivel warning
 08:30:47 PM:ERROR [logger_base.py:16] Mensaje a nivel error
 08:30:47 PM:CRITICAL [logger_base.py:17] Mensaje a nivel critical
+07:24:46 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez,
+            Email: PerezJ@mail.com
+        
+07:31:47 PM:DEBUG [Persona.py:55] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez,
+            Email: PerezJ@mail.com
+        
+07:31:47 PM:DEBUG [Persona.py:57] 
+            Id Persona: None, 
+            Nombre: Jose, 
+            Apellido: Lepez,
+            Email: JoseL@mail.com
+        
+07:31:47 PM:DEBUG [Persona.py:59] 
+            Id Persona: 1, 
+            Nombre: None, 
+            Apellido: None,
+            Email: None
+        
+08:29:54 PM:DEBUG [conexion.py:27] Conexion exitosa: <connection object at 0x000001D91294F560; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:36:33 PM:DEBUG [conexion.py:27] Conexion exitosa: <connection object at 0x00000265E59AF560; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:36:33 PM:ERROR [conexion.py:43] Ocurrio un error: 'NoneType' object has no attribute 'cursor'
+08:39:15 PM:DEBUG [conexion.py:27] Conexion exitosa: <connection object at 0x00000258E631D470; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:39:15 PM:ERROR [conexion.py:43] Ocurrio un error: 'NoneType' object has no attribute 'cursor'
+08:39:26 PM:DEBUG [conexion.py:27] Conexion exitosa: <connection object at 0x000001FB545FF560; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:39:26 PM:ERROR [conexion.py:43] Ocurrio un error: 'NoneType' object has no attribute 'cursor'
+08:39:51 PM:DEBUG [conexion.py:27] Conexion exitosa: <connection object at 0x0000011A2B21F560; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:39:51 PM:DEBUG [conexion.py:40] Se abrio correctamente el cursor: <cursor object at 0x0000011A2993BA00; closed: 0>
